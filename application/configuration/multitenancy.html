@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Multitenancy | Chevereto V4 Docs</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-66RGXZE185"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-66RGXZE185');</script>
+    <meta name="description" content="Image and Video hosting software">
+    <meta property="og:site_name" content="Chevereto V4 Docs">
+    <meta property="og:title" content="Multitenancy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/application/configuration/multitenancy.html">
+    <meta name="twitter:title" content="Multitenancy">
+    <meta name="twitter:url" content="/application/configuration/multitenancy.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#006edb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.a1ead4c0.css" as="style"><link rel="preload" href="/assets/js/app.e0950cc1.js" as="script"><link rel="preload" href="/assets/js/2.5d436417.js" as="script"><link rel="preload" href="/assets/js/1.7f129dd2.js" as="script"><link rel="preload" href="/assets/js/41.68b503d8.js" as="script"><link rel="prefetch" href="/assets/js/10.75c13605.js"><link rel="prefetch" href="/assets/js/11.f5f9dbc3.js"><link rel="prefetch" href="/assets/js/12.4d01235e.js"><link rel="prefetch" href="/assets/js/13.dd9432d4.js"><link rel="prefetch" href="/assets/js/14.46f48afb.js"><link rel="prefetch" href="/assets/js/15.a53ceec0.js"><link rel="prefetch" href="/assets/js/16.b7087e6b.js"><link rel="prefetch" href="/assets/js/17.a9aa9202.js"><link rel="prefetch" href="/assets/js/18.24e9135c.js"><link rel="prefetch" href="/assets/js/19.eb100255.js"><link rel="prefetch" href="/assets/js/20.12739b27.js"><link rel="prefetch" href="/assets/js/21.ff50794c.js"><link rel="prefetch" href="/assets/js/22.3a7d5628.js"><link rel="prefetch" href="/assets/js/23.a2055014.js"><link rel="prefetch" href="/assets/js/24.8e9e7b41.js"><link rel="prefetch" href="/assets/js/25.f6e23a7a.js"><link rel="prefetch" href="/assets/js/26.6bb6d9ad.js"><link rel="prefetch" href="/assets/js/27.b8c8cf19.js"><link rel="prefetch" href="/assets/js/28.9cb2185a.js"><link rel="prefetch" href="/assets/js/29.69297802.js"><link rel="prefetch" href="/assets/js/3.bf70da03.js"><link rel="prefetch" href="/assets/js/30.6609ba83.js"><link rel="prefetch" href="/assets/js/31.62b42666.js"><link rel="prefetch" href="/assets/js/32.284a2cfc.js"><link rel="prefetch" href="/assets/js/33.8ba7d562.js"><link rel="prefetch" href="/assets/js/34.0a149a31.js"><link rel="prefetch" href="/assets/js/35.ca482816.js"><link rel="prefetch" href="/assets/js/36.74890534.js"><link rel="prefetch" href="/assets/js/37.4aec0739.js"><link rel="prefetch" href="/assets/js/38.f341a0f2.js"><link rel="prefetch" href="/assets/js/39.119198a5.js"><link rel="prefetch" href="/assets/js/4.72ac77d0.js"><link rel="prefetch" href="/assets/js/40.2bad0749.js"><link rel="prefetch" href="/assets/js/42.094b575e.js"><link rel="prefetch" href="/assets/js/43.e1b67def.js"><link rel="prefetch" href="/assets/js/44.1afca8bf.js"><link rel="prefetch" href="/assets/js/45.3469784c.js"><link rel="prefetch" href="/assets/js/46.baaeaaf9.js"><link rel="prefetch" href="/assets/js/47.de9aa8cb.js"><link rel="prefetch" href="/assets/js/48.97034949.js"><link rel="prefetch" href="/assets/js/49.e13a9185.js"><link rel="prefetch" href="/assets/js/5.793663cc.js"><link rel="prefetch" href="/assets/js/50.88c5ffc8.js"><link rel="prefetch" href="/assets/js/51.b77eed23.js"><link rel="prefetch" href="/assets/js/52.9f2fa3b5.js"><link rel="prefetch" href="/assets/js/53.fbad2629.js"><link rel="prefetch" href="/assets/js/54.642fe300.js"><link rel="prefetch" href="/assets/js/55.28e9fd66.js"><link rel="prefetch" href="/assets/js/56.a0fbaa9f.js"><link rel="prefetch" href="/assets/js/57.3930dc80.js"><link rel="prefetch" href="/assets/js/58.e6a711ab.js"><link rel="prefetch" href="/assets/js/59.688aaba5.js"><link rel="prefetch" href="/assets/js/6.8f6d9838.js"><link rel="prefetch" href="/assets/js/60.9161ffc5.js"><link rel="prefetch" href="/assets/js/61.cfd3cff7.js"><link rel="prefetch" href="/assets/js/62.5a2f23d6.js"><link rel="prefetch" href="/assets/js/63.56b714ca.js"><link rel="prefetch" href="/assets/js/64.a31261c0.js"><link rel="prefetch" href="/assets/js/65.7ea5ca09.js"><link rel="prefetch" href="/assets/js/66.a1e2c76a.js"><link rel="prefetch" href="/assets/js/67.2a76a4df.js"><link rel="prefetch" href="/assets/js/68.1a7395f0.js"><link rel="prefetch" href="/assets/js/69.c8e06443.js"><link rel="prefetch" href="/assets/js/7.2b6b7c05.js"><link rel="prefetch" href="/assets/js/70.85f09668.js"><link rel="prefetch" href="/assets/js/71.3d8393c3.js"><link rel="prefetch" href="/assets/js/72.dc723ceb.js"><link rel="prefetch" href="/assets/js/73.18f8b32f.js"><link rel="prefetch" href="/assets/js/74.ca653ce6.js"><link rel="prefetch" href="/assets/js/75.f15db5b3.js"><link rel="prefetch" href="/assets/js/76.f1ef4540.js"><link rel="prefetch" href="/assets/js/77.f9eecc60.js"><link rel="prefetch" href="/assets/js/78.ad4a07e4.js"><link rel="prefetch" href="/assets/js/79.cd85246e.js"><link rel="prefetch" href="/assets/js/80.890d7916.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.48a0b1d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1ead4c0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevereto V4 Docs" class="logo"> <span class="site-name can-hide">Chevereto V4 Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" class="nav-link">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" class="nav-link">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>App</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Installing &amp; Updating</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/application/installing/installation.html" class="sidebar-link">Installation</a></li><li><a href="/application/installing/updating.html" class="sidebar-link">Updating</a></li><li><a href="/application/installing/upgrading.html" class="sidebar-link">Upgrading</a></li><li><a href="/application/installing/from-free.html" class="sidebar-link">From free</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Configuration</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/application/configuration/configuring.html" class="sidebar-link">Configuring</a></li><li><a href="/application/configuration/environment.html" class="sidebar-link">Environment</a></li><li><a href="/application/configuration/multitenancy.html" aria-current="page" class="active sidebar-link">Multitenancy</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#system-overview" class="sidebar-link">System overview</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#enabling-multitenancy" class="sidebar-link">Enabling multitenancy</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#saas-context" class="sidebar-link">SaaS context</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#environment-variables" class="sidebar-link">Environment variables</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#initializing-the-multi-tenant-system" class="sidebar-link">Initializing the multi-tenant system</a></li></ul></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#tenants-api-keys" class="sidebar-link">Tenants API keys</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#creating-tenants-api-keys" class="sidebar-link">Creating Tenants API keys</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#verifying-tenants-api-keys" class="sidebar-link">Verifying Tenants API keys</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#deleting-tenants-api-keys" class="sidebar-link">Deleting Tenants API keys</a></li></ul></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#hardening-the-tenants-api" class="sidebar-link">Hardening the Tenants API</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#managing-tenant-plans" class="sidebar-link">Managing tenant plans</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#creating-a-tenant-plan" class="sidebar-link">Creating a tenant plan</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#editing-a-tenant-plan" class="sidebar-link">Editing a tenant plan</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#listing-tenant-plans" class="sidebar-link">Listing tenant plans</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#deleting-a-tenant-plan" class="sidebar-link">Deleting a tenant plan</a></li></ul></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#managing-tenants" class="sidebar-link">Managing tenants</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#creating-a-tenant" class="sidebar-link">Creating a tenant</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#listing-tenants" class="sidebar-link">Listing tenants</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#installing-chevereto" class="sidebar-link">Installing Chevereto</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#editing-a-tenant" class="sidebar-link">Editing a tenant</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#deleting-a-tenant" class="sidebar-link">Deleting a tenant</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#caching-tenant-data" class="sidebar-link">Caching tenant data</a></li></ul></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#tenants-stats-refresh" class="sidebar-link">Tenants stats refresh</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#running-jobs-worker" class="sidebar-link">Running jobs worker</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#updating-tenants" class="sidebar-link">Updating tenants</a></li><li class="sidebar-sub-header"><a href="/application/configuration/multitenancy.html#application-cli" class="sidebar-link">Application CLI</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Stack</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/application/stack/operating-system.html" class="sidebar-link">Operating system</a></li><li><a href="/application/stack/php.html" class="sidebar-link">PHP</a></li><li><a href="/application/stack/mysql-server.html" class="sidebar-link">MySQL Server</a></li><li><a href="/application/stack/web-server.html" class="sidebar-link">Web Server</a></li><li><a href="/application/stack/redis.html" class="sidebar-link">Redis</a></li><li><a href="/application/stack/utilities.html" class="sidebar-link">Utilities</a></li><li><a href="/application/stack/cron.html" class="sidebar-link">CRON</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/application/reference/cli.html" class="sidebar-link">CLI</a></li><li><a href="/application/reference/encryption.html" class="sidebar-link">Encryption</a></li><li><a href="/application/reference/errors.html" class="sidebar-link">Errors</a></li><li><a href="/application/reference/security.html" class="sidebar-link">Security</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="multitenancy"><a href="#multitenancy" class="header-anchor">#</a> Multitenancy</h1> <p><a href="https://en.wikipedia.org/wiki/Multitenancy" target="_blank" rel="noopener noreferrer">Multitenancy<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> is supported as of version 4.4.0.</p> <p>It allows hosting multiple isolated Chevereto instances (tenants) in a single installation. Each tenant has its own configuration, users, media, and settings, while sharing the same application codebase. This reduces maintenance and resource consumption.</p> <h2 id="system-overview"><a href="#system-overview" class="header-anchor">#</a> System overview</h2> <p>In a multi-tenant setup, Chevereto recognizes and serves multiple tenants. Each tenant:</p> <ul><li>Is identified by a unique tenant ID.</li> <li>Is bound to a hostname.</li> <li>Is resolved at runtime from the incoming request’s hostname.</li></ul> <p>Tenant metadata is stored in the <code>tenants</code> and <code>tenants_plans</code> database tables. The database is the source of truth for tenant limits and environment settings. The application caches this data in memory and provides a <a href="/application/reference/cli.html#tenants-cli">command line interface</a> to manage it.</p> <p>Data stored under <code>env</code> columns is encrypted.</p> <p>Resource sharing and isolation:</p> <ul><li>Database: table prefixing per tenant.</li> <li>Cache: key prefixing per tenant.</li> <li>Storage: tenants configure their own “Site storage” and “Upload storage” in application settings.</li> <li>Sessions: only Redis is supported as the backend.</li> <li>Tenant ID: unique, up to 16 characters.</li> <li>Tenant hostname: unique, up to 255 characters.</li></ul> <p>Once a hostname is resolved to a tenant, the application behaves as if it were a standalone Chevereto instance with its own configuration.</p> <h2 id="enabling-multitenancy"><a href="#enabling-multitenancy" class="header-anchor">#</a> Enabling multitenancy</h2> <p>To enable tenants, set the following environment variables. You must provide an <a href="/application/reference/encryption.html#key">encryption key</a> for securing tenant environment data.</p> <div class="language-plain extra-class"><pre class="language-plain"><code>CHEVERETO_ENABLE_TENANTS=1
+CHEVERETO_ENCRYPTION_KEY=your_encryption_key
+CHEVERETO_PROVIDER_NAME=your_provider_name
+CHEVERETO_PROVIDER_URL=your_provider_url
+CHEVERETO_TENANTS_API_REQUEST_SECRET=your_request_secret
+</code></pre></div><ul><li><code>CHEVERETO_TENANTS_API_REQUEST_SECRET</code> is used to sign and verify requests to the <a href="/api/4/tenants.html">Tenants API</a>. When configured, all API requests must include a valid signature.</li></ul> <h3 id="saas-context"><a href="#saas-context" class="header-anchor">#</a> SaaS context</h3> <p>The Chevereto SaaS context is a special mode for service providers offering Chevereto as a service to multiple customers. When running Chevereto in a SaaS context, the system alters functionality and display that otherwise would allow tenants to interfere with each other or the host system. In particular, it affects the following features:</p> <ul><li>Self-upgrade capabilities</li> <li>HTTP cron trigger</li> <li>License key management</li> <li>System information display (database version, PHP info, FFmpeg, etc.)</li></ul> <p>To run Chevereto in a SaaS context set:</p> <div class="language-plain extra-class"><pre class="language-plain"><code>CHEVERETO_CONTEXT=saas
+</code></pre></div><h3 id="environment-variables"><a href="#environment-variables" class="header-anchor">#</a> Environment variables</h3> <p>Define resource limits and environment variables per tenant via plans and tenant configurations. To enforce overrides at runtime for all tenants, set <code>CHEVERETO_TENANT_ENFORCED</code> to a JSON object.</p> <p>Precedence (highest to lowest):</p> <ul><li><code>CHEVERETO_TENANT_ENFORCED</code> (runtime enforced, not stored)</li> <li>Tenant <code>env</code> (encrypted at rest), <code>limits</code></li> <li>Plan <code>env</code> (encrypted at rest), <code>limits</code></li> <li>Global defaults/environment</li></ul> <div class="language-plain extra-class"><pre class="language-plain"><code>CHEVERETO_TENANT_ENFORCED='{&quot;CHEVERETO_MAX_UPLOAD_SIZE&quot;:&quot;20M&quot;}'
+</code></pre></div><p><strong>Tip:</strong> When using yaml you can define <code>CHEVERETO_TENANT_ENFORCED</code> multi-line as:</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">CHEVERETO_TENANT_ENFORCED</span><span class="token punctuation">:</span> <span class="token punctuation">&gt;</span><span class="token scalar string">
+  {
+      &quot;CHEVERETO_CONTEXT&quot;:&quot;saas&quot;,
+      &quot;CHEVERETO_ENABLE_BULK_IMPORTER&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_CDN&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_DEBUG&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_LOCAL_STORAGE&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_NEWS_CHECK&quot;:&quot;1&quot;,
+      &quot;CHEVERETO_ENABLE_PHP_PAGES&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_POWERED_BY_SETTING&quot;:&quot;1&quot;,
+      &quot;CHEVERETO_ENABLE_FORCE_POWERED_BY_FOOTER&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_PUP_CUSTOM_URL&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_UPDATE_CHECK&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_UPDATE_HTTP&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_UPLOAD_URL&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_ENABLE_SERVICE_MODERATECONTENT&quot;:&quot;0&quot;,
+      &quot;CHEVERETO_MAX_LISTING_ITEMS_PER_PAGE&quot;:&quot;48&quot;,
+      &quot;CHEVERETO_MAX_CACHE_TTL&quot;:&quot;3600&quot;,
+      &quot;CHEVERETO_MIN_STORAGES_ACTIVE&quot;:&quot;1&quot;
+  }</span>
+</code></pre></div><h3 id="initializing-the-multi-tenant-system"><a href="#initializing-the-multi-tenant-system" class="header-anchor">#</a> Initializing the multi-tenant system</h3> <p>Initialize the multi-tenant database (run once after enabling multitenancy):</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> init
+</code></pre></div><h2 id="tenants-api-keys"><a href="#tenants-api-keys" class="header-anchor">#</a> Tenants API keys</h2> <h3 id="creating-tenants-api-keys"><a href="#creating-tenants-api-keys" class="header-anchor">#</a> Creating Tenants API keys</h3> <p>Use <a href="/application/reference/cli.html#create-tenants-api-key">api:key:create</a> to create API keys for accessing the Tenants API.</p> <p>API keys for Tenants API have the format <code>chv_1_*</code>, where <code>1</code> is the integer, sequential generated, API key id.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> api:key:create <span class="token punctuation">\</span>
+    <span class="token parameter variable">--name</span> <span class="token string">&quot;My Key&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">--expires</span> <span class="token string">&quot;2025-12-31 23:59:59&quot;</span>
+</code></pre></div><h3 id="verifying-tenants-api-keys"><a href="#verifying-tenants-api-keys" class="header-anchor">#</a> Verifying Tenants API keys</h3> <p>Use <a href="/application/reference/cli.html#verify-tenants-api-key">api:key:verify</a> to verify an API key by its key value.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> api:key:verify <span class="token parameter variable">--key</span> chv_1_1234567890
+</code></pre></div><h3 id="deleting-tenants-api-keys"><a href="#deleting-tenants-api-keys" class="header-anchor">#</a> Deleting Tenants API keys</h3> <p>Use <a href="/application/reference/cli.html#delete-tenants-api-key">api:key:delete</a> to delete an API key by id and/or name.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> api:key:delete <span class="token parameter variable">--id</span> <span class="token number">1</span>
+app/bin/tenants <span class="token parameter variable">-C</span> api:key:delete <span class="token parameter variable">--name</span> <span class="token string">&quot;My Key&quot;</span>
+</code></pre></div><h2 id="hardening-the-tenants-api"><a href="#hardening-the-tenants-api" class="header-anchor">#</a> Hardening the Tenants API</h2> <p>Access to the <a href="/api/4/tenants.html">Tenants API</a> can be restricted by IP address or network range using <code>CHEVERETO_TENANTS_API_ALLOW_LIST</code>.</p> <p>All API keys are cryptographically signed with <code>CHEVERETO_TENANTS_API_KEY_SECRET</code>. Only keys generated through the <a href="/application/reference/cli.html#create-tenants-api-key">Tenants CLI</a> contain valid signatures and will be accepted by the API.</p> <div class="language-plain extra-class"><pre class="language-plain"><code>CHEVERETO_TENANTS_API_ALLOW_LIST=&quot;200.200.200.200,10.0.0.0/24,203.0.113.0/28&quot;
+CHEVERETO_TENANTS_API_KEY_SECRET=your_tenants_api_signing_secret
+</code></pre></div><h2 id="managing-tenant-plans"><a href="#managing-tenant-plans" class="header-anchor">#</a> Managing tenant plans</h2> <p>Tenant plans define default limits and environment variables, similar to a template. When a tenant is assigned to a plan, it inherits the plan’s limits and environment, which the tenant can still override.</p> <ul><li>Use <code>limits</code> to define resource constraints.</li> <li>Use <code>env</code> to set environment variables (values are stored encrypted).</li></ul> <h3 id="creating-a-tenant-plan"><a href="#creating-a-tenant-plan" class="header-anchor">#</a> Creating a tenant plan</h3> <p>Use <a href="/application/reference/cli.html#create-tenant-plan">plan:create</a>. Pass the plan <code>id</code>, <code>limits</code> and <code>env</code> are optional (JSON format).</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> plan:create <span class="token punctuation">\</span>
+    <span class="token parameter variable">--id</span> my-plan <span class="token punctuation">\</span>
+    <span class="token parameter variable">--limits</span> <span class="token string">'{&quot;CHEVERETO_MAX_TAGS&quot;:&quot;10000&quot;}'</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">--env</span> <span class="token string">'{&quot;CHEVERETO_CACHE_TIME_MICRO&quot;:&quot;120&quot;}'</span>
+</code></pre></div><p>This creates plan <code>my-plan</code> with a maximum of <code>10000</code> tags and a cache time of <code>120</code> seconds.</p> <h3 id="editing-a-tenant-plan"><a href="#editing-a-tenant-plan" class="header-anchor">#</a> Editing a tenant plan</h3> <p>Use <a href="/application/reference/cli.html#edit-tenant-plan">plan:edit</a> to change the name, limits, or environment of an existing plan. Affected tenants will inherit the updated plan settings; the settings are re-cached automatically.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> plan:edit <span class="token punctuation">\</span>
+    <span class="token parameter variable">--id</span> my-plan <span class="token punctuation">\</span>
+    <span class="token parameter variable">--limits</span> <span class="token string">'{&quot;CHEVERETO_MAX_TAGS&quot;:&quot;15000&quot;}'</span>
+</code></pre></div><h3 id="listing-tenant-plans"><a href="#listing-tenant-plans" class="header-anchor">#</a> Listing tenant plans</h3> <p>Use <a href="/application/reference/cli.html#list-tenant-plans">plan:list</a>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> plan:list
+</code></pre></div><h3 id="deleting-a-tenant-plan"><a href="#deleting-a-tenant-plan" class="header-anchor">#</a> Deleting a tenant plan</h3> <p>Use <a href="/application/reference/cli.html#delete-tenant-plan">plan:delete</a> by plan ID. Affected tenants will lose the inherited plan settings; the settings are re-cached automatically.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> plan:delete <span class="token parameter variable">--id</span> my-plan
+</code></pre></div><h2 id="managing-tenants"><a href="#managing-tenants" class="header-anchor">#</a> Managing tenants</h2> <p>A tenant represents an individual Chevereto instance within the multi-tenant setup. Each tenant has a unique hostname and can override its plan’s limits and environment.</p> <ul><li>Use <code>limits</code> for resource constraints.</li> <li>Use <code>env</code> for environment variables (encrypted). Tenant <code>env</code> overrides plan <code>env</code>.</li></ul> <h3 id="creating-a-tenant"><a href="#creating-a-tenant" class="header-anchor">#</a> Creating a tenant</h3> <p>Use <a href="/application/reference/cli.html#create-tenant">create</a>. Provide tenant ID, hostname, and enabled status. <code>plan_id</code>, <code>limits</code>, and <code>env</code> are optional (JSON format).</p> <p><strong>Note:</strong> It is <strong>recommended</strong> to set a unique <code>CHEVERETO_ENCRYPTION_KEY</code> per tenant for enhanced security.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> create <span class="token punctuation">\</span>
+    <span class="token parameter variable">--id</span> tenant1 <span class="token punctuation">\</span>
+    <span class="token parameter variable">--hostname</span> example.com <span class="token punctuation">\</span>
+    <span class="token parameter variable">--is_enabled</span> <span class="token number">1</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">--plan_id</span> my-plan <span class="token punctuation">\</span>
+    <span class="token parameter variable">--env</span> <span class="token string">'{&quot;CHEVERETO_ENCRYPTION_KEY&quot;:&quot;base64 encoded (size 32)&quot;}'</span>
+</code></pre></div><p>Command above creates tenant <code>tenant1</code> associated with the hostname <code>example.com</code>, enabled, with plan <code>my-plan</code>.</p> <h3 id="listing-tenants"><a href="#listing-tenants" class="header-anchor">#</a> Listing tenants</h3> <p>Use <a href="/application/reference/cli.html#list-tenants">list</a>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> list
+</code></pre></div><h3 id="installing-chevereto"><a href="#installing-chevereto" class="header-anchor">#</a> Installing Chevereto</h3> <p>After creating a tenant, the application requires to <a href="/application/installing/installation.html#setup">setup</a>, which can be made via CLI or HTTP.</p> <ul><li>For <a href="/application/reference/cli.html#install">CLI Install</a> pass the <code>CHEVERETO_TENANT</code> environment variable:</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">CHEVERETO_TENANT</span><span class="token operator">=</span>tenant1 app/bin/cli <span class="token parameter variable">-C</span> <span class="token function">install</span> <span class="token punctuation">\</span>
+    <span class="token operator">&lt;</span>options<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>For Web install, access the tenant hostname in a web browser and follow the setup instructions.</li></ul> <h3 id="editing-a-tenant"><a href="#editing-a-tenant" class="header-anchor">#</a> Editing a tenant</h3> <p>Use <a href="/application/reference/cli.html#edit-tenant">edit</a> to change hostname, enabled status, plan, limits, or environment.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> edit <span class="token punctuation">\</span>
+    <span class="token parameter variable">--id</span> <span class="token number">1</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">--is_enabled</span> <span class="token number">0</span>
+</code></pre></div><h3 id="deleting-a-tenant"><a href="#deleting-a-tenant" class="header-anchor">#</a> Deleting a tenant</h3> <p>Use <a href="/application/reference/cli.html#delete-tenant">delete</a> by tenant ID:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> delete <span class="token parameter variable">--id</span> <span class="token number">1</span>
+app/bin/tenants <span class="token parameter variable">-C</span> delete <span class="token parameter variable">--id</span> <span class="token number">1</span> --drop-tables
+</code></pre></div><p>When passing <code>--drop-tables</code>, the tenant’s database tables are also removed.</p> <h3 id="caching-tenant-data"><a href="#caching-tenant-data" class="header-anchor">#</a> Caching tenant data</h3> <p>Use <a href="/application/reference/cli.html#cache-tenants-data">cache</a> to regenerate the entire tenant data cache:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> cache
+</code></pre></div><h2 id="tenants-stats-refresh"><a href="#tenants-stats-refresh" class="header-anchor">#</a> Tenants stats refresh</h2> <p>Use <a href="/application/reference/cli.html#tenants-stats-refresh">stats:refresh</a> to recalculate and update the tenants stats table.</p> <p>To refresh stats for all tenants:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> stats:refresh
+</code></pre></div><p>To refresh stats for a specific tenant:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> stats:refresh <span class="token parameter variable">--id</span> <span class="token number">1</span>
+</code></pre></div><h2 id="running-jobs-worker"><a href="#running-jobs-worker" class="header-anchor">#</a> Running jobs worker</h2> <p>Use <a href="/application/reference/cli.html#tenants-jobs-worker">jobs:worker</a> to run the jobs worker in multi-tenant mode. This long-running process handles background tasks for all tenant websites and periodically refreshes the tenants stats table.</p> <p>Adjust the job polling interval per tenant by setting <code>CHEVERETO_JOBS_WORKER_INTERVAL</code> (in seconds) globally, in a plan, or for individual tenants.</p> <p>To run the worker for all tenants:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> jobs:worker
+</code></pre></div><p>To run the worker for a specific tenant:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> jobs:worker <span class="token parameter variable">--id</span> <span class="token number">1</span>
+</code></pre></div><p>You can also run each tenant job by passing the tenant ID to the <a href="/application/reference/cli.html#cron">CRON command</a>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">CHEVERETO_TENANT</span><span class="token operator">=</span><span class="token number">1</span> app/bin/cli <span class="token parameter variable">-C</span> <span class="token function">cron</span>
+</code></pre></div><h2 id="updating-tenants"><a href="#updating-tenants" class="header-anchor">#</a> Updating tenants</h2> <p>When updating Chevereto, run the <a href="/application/reference/cli.html#tenants-database-migrate">database:migrate</a> command to apply database migrations.</p> <p>To apply updates to all tenants:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> database:migrate
+</code></pre></div><p>To update a specific tenant:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>app/bin/tenants <span class="token parameter variable">-C</span> database:migrate <span class="token parameter variable">--id</span> <span class="token number">1</span>
+</code></pre></div><p>You can also update each tenant by passing the tenant ID to the <a href="/application/reference/cli.html#database-migrate">database-migrate command</a>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">CHEVERETO_TENANT</span><span class="token operator">=</span><span class="token number">1</span> app/bin/cli <span class="token parameter variable">-C</span> database-migrate
+</code></pre></div><h2 id="application-cli"><a href="#application-cli" class="header-anchor">#</a> Application CLI</h2> <p>Access the application CLI of each tenant by passing the target tenant via the <code>CHEVERETO_TENANT</code> environment variable.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">CHEVERETO_TENANT</span><span class="token operator">=</span>abc app/bin/cli <span class="token parameter variable">-C</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>options<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v4-docs/edit/main/application/configuration/multitenancy.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/application/configuration/environment.html" class="prev">
+        Environment
+      </a></span> <span class="next"><a href="/application/stack/operating-system.html">
+        Operating system
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e0950cc1.js" defer></script><script src="/assets/js/2.5d436417.js" defer></script><script src="/assets/js/1.7f129dd2.js" defer></script><script src="/assets/js/41.68b503d8.js" defer></script>
+  </body>
+</html>

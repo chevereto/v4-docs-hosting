@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>File upload API | Chevereto V4 Docs</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-66RGXZE185"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-66RGXZE185');</script>
+    <meta name="description" content="Image and Video hosting software">
+    <meta property="og:site_name" content="Chevereto V4 Docs">
+    <meta property="og:title" content="File upload API">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/api/1/file-upload.html">
+    <meta name="twitter:title" content="File upload API">
+    <meta name="twitter:url" content="/api/1/file-upload.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#006edb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.a1ead4c0.css" as="style"><link rel="preload" href="/assets/js/app.e0950cc1.js" as="script"><link rel="preload" href="/assets/js/2.5d436417.js" as="script"><link rel="preload" href="/assets/js/1.7f129dd2.js" as="script"><link rel="preload" href="/assets/js/36.74890534.js" as="script"><link rel="prefetch" href="/assets/js/10.75c13605.js"><link rel="prefetch" href="/assets/js/11.f5f9dbc3.js"><link rel="prefetch" href="/assets/js/12.4d01235e.js"><link rel="prefetch" href="/assets/js/13.dd9432d4.js"><link rel="prefetch" href="/assets/js/14.46f48afb.js"><link rel="prefetch" href="/assets/js/15.a53ceec0.js"><link rel="prefetch" href="/assets/js/16.b7087e6b.js"><link rel="prefetch" href="/assets/js/17.a9aa9202.js"><link rel="prefetch" href="/assets/js/18.24e9135c.js"><link rel="prefetch" href="/assets/js/19.eb100255.js"><link rel="prefetch" href="/assets/js/20.12739b27.js"><link rel="prefetch" href="/assets/js/21.ff50794c.js"><link rel="prefetch" href="/assets/js/22.3a7d5628.js"><link rel="prefetch" href="/assets/js/23.a2055014.js"><link rel="prefetch" href="/assets/js/24.8e9e7b41.js"><link rel="prefetch" href="/assets/js/25.f6e23a7a.js"><link rel="prefetch" href="/assets/js/26.6bb6d9ad.js"><link rel="prefetch" href="/assets/js/27.b8c8cf19.js"><link rel="prefetch" href="/assets/js/28.9cb2185a.js"><link rel="prefetch" href="/assets/js/29.69297802.js"><link rel="prefetch" href="/assets/js/3.bf70da03.js"><link rel="prefetch" href="/assets/js/30.6609ba83.js"><link rel="prefetch" href="/assets/js/31.62b42666.js"><link rel="prefetch" href="/assets/js/32.284a2cfc.js"><link rel="prefetch" href="/assets/js/33.8ba7d562.js"><link rel="prefetch" href="/assets/js/34.0a149a31.js"><link rel="prefetch" href="/assets/js/35.ca482816.js"><link rel="prefetch" href="/assets/js/37.4aec0739.js"><link rel="prefetch" href="/assets/js/38.f341a0f2.js"><link rel="prefetch" href="/assets/js/39.119198a5.js"><link rel="prefetch" href="/assets/js/4.72ac77d0.js"><link rel="prefetch" href="/assets/js/40.2bad0749.js"><link rel="prefetch" href="/assets/js/41.68b503d8.js"><link rel="prefetch" href="/assets/js/42.094b575e.js"><link rel="prefetch" href="/assets/js/43.e1b67def.js"><link rel="prefetch" href="/assets/js/44.1afca8bf.js"><link rel="prefetch" href="/assets/js/45.3469784c.js"><link rel="prefetch" href="/assets/js/46.baaeaaf9.js"><link rel="prefetch" href="/assets/js/47.de9aa8cb.js"><link rel="prefetch" href="/assets/js/48.97034949.js"><link rel="prefetch" href="/assets/js/49.e13a9185.js"><link rel="prefetch" href="/assets/js/5.793663cc.js"><link rel="prefetch" href="/assets/js/50.88c5ffc8.js"><link rel="prefetch" href="/assets/js/51.b77eed23.js"><link rel="prefetch" href="/assets/js/52.9f2fa3b5.js"><link rel="prefetch" href="/assets/js/53.fbad2629.js"><link rel="prefetch" href="/assets/js/54.642fe300.js"><link rel="prefetch" href="/assets/js/55.28e9fd66.js"><link rel="prefetch" href="/assets/js/56.a0fbaa9f.js"><link rel="prefetch" href="/assets/js/57.3930dc80.js"><link rel="prefetch" href="/assets/js/58.e6a711ab.js"><link rel="prefetch" href="/assets/js/59.688aaba5.js"><link rel="prefetch" href="/assets/js/6.8f6d9838.js"><link rel="prefetch" href="/assets/js/60.9161ffc5.js"><link rel="prefetch" href="/assets/js/61.cfd3cff7.js"><link rel="prefetch" href="/assets/js/62.5a2f23d6.js"><link rel="prefetch" href="/assets/js/63.56b714ca.js"><link rel="prefetch" href="/assets/js/64.a31261c0.js"><link rel="prefetch" href="/assets/js/65.7ea5ca09.js"><link rel="prefetch" href="/assets/js/66.a1e2c76a.js"><link rel="prefetch" href="/assets/js/67.2a76a4df.js"><link rel="prefetch" href="/assets/js/68.1a7395f0.js"><link rel="prefetch" href="/assets/js/69.c8e06443.js"><link rel="prefetch" href="/assets/js/7.2b6b7c05.js"><link rel="prefetch" href="/assets/js/70.85f09668.js"><link rel="prefetch" href="/assets/js/71.3d8393c3.js"><link rel="prefetch" href="/assets/js/72.dc723ceb.js"><link rel="prefetch" href="/assets/js/73.18f8b32f.js"><link rel="prefetch" href="/assets/js/74.ca653ce6.js"><link rel="prefetch" href="/assets/js/75.f15db5b3.js"><link rel="prefetch" href="/assets/js/76.f1ef4540.js"><link rel="prefetch" href="/assets/js/77.f9eecc60.js"><link rel="prefetch" href="/assets/js/78.ad4a07e4.js"><link rel="prefetch" href="/assets/js/79.cd85246e.js"><link rel="prefetch" href="/assets/js/80.890d7916.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.48a0b1d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1ead4c0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevereto V4 Docs" class="logo"> <span class="site-name can-hide">Chevereto V4 Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" class="nav-link">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" class="nav-link">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API V4</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/4/authorization.html" class="sidebar-link">Authorization</a></li><li><a href="/api/4/tenants.html" class="sidebar-link">Tenants</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API V1</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/1/authorization.html" class="sidebar-link">Authorization</a></li><li><a href="/api/1/file-upload.html" aria-current="page" class="active sidebar-link">File upload</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#request-method" class="sidebar-link">Request method</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#request-url" class="sidebar-link">Request URL</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#parameters" class="sidebar-link">Parameters</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#source" class="sidebar-link">source</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#key-optional" class="sidebar-link">key (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#title-optional" class="sidebar-link">title (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#description-optional" class="sidebar-link">description (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#tags-optional" class="sidebar-link">tags (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#album-id-optional" class="sidebar-link">album_id (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#category-id-optional" class="sidebar-link">category_id (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#width-optional" class="sidebar-link">width (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#expiration-optional" class="sidebar-link">expiration (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#nsfw-optional" class="sidebar-link">nsfw (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#format-optional" class="sidebar-link">format (optional)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#use-file-date-optional-admin-only" class="sidebar-link">usefiledate (optional, admin only)</a></li></ul></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#example-call" class="sidebar-link">Example call</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#api-response" class="sidebar-link">API response</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#example-response-json" class="sidebar-link">Example response (JSON)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#example-response-txt" class="sidebar-link">Example response (txt)</a></li><li class="sidebar-sub-header"><a href="/api/1/file-upload.html#example-response-redirect" class="sidebar-link">Example response (redirect)</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="file-upload-api"><a href="#file-upload-api" class="header-anchor">#</a> File upload API</h1> <p>Chevereto API enables programmatic file uploads, allowing you to seamlessly integrate our uploading functionality into your own applications.</p> <h2 id="request-method"><a href="#request-method" class="header-anchor">#</a> Request method</h2> <p>API V1 calls can be made using POST or GET request methods.</p> <p>POST request method is <strong>recommended</strong>.</p> <h2 id="request-url"><a href="#request-url" class="header-anchor">#</a> Request URL</h2> <div class="language-plain extra-class"><pre class="language-plain"><code>http://mysite.com/api/1/upload
+</code></pre></div><h2 id="parameters"><a href="#parameters" class="header-anchor">#</a> Parameters</h2> <h3 id="source"><a href="#source" class="header-anchor">#</a> source</h3> <p>A binary file, base64 data, or a URL for an image.</p> <h3 id="key-optional"><a href="#key-optional" class="header-anchor">#</a> key (optional)</h3> <p>The API key. You can use this parameter if unable to provide auth via headers.</p> <h3 id="title-optional"><a href="#title-optional" class="header-anchor">#</a> title (optional)</h3> <p>File title. This is automatically detected from metadata if not provided.</p> <h3 id="description-optional"><a href="#description-optional" class="header-anchor">#</a> description (optional)</h3> <p>File description. This is automatically detected from metadata if not provided.</p> <h3 id="tags-optional"><a href="#tags-optional" class="header-anchor">#</a> tags (optional)</h3> <p>File tag(s). Comma separated list of tags.</p> <h3 id="album-id-optional"><a href="#album-id-optional" class="header-anchor">#</a> album_id (optional)</h3> <p>File album id, must be owned by the API key user.</p> <h3 id="category-id-optional"><a href="#category-id-optional" class="header-anchor">#</a> category_id (optional)</h3> <p>Category id. Determines the file category to assign.</p> <h3 id="width-optional"><a href="#width-optional" class="header-anchor">#</a> width (optional)</h3> <p>Target resize width, will automatic detect height.</p> <h3 id="expiration-optional"><a href="#expiration-optional" class="header-anchor">#</a> expiration (optional)</h3> <p>Expiration time to auto-delete the file in date interval format. For example, PT5M for five minutes in the future. P3D for three days in the future.</p> <h3 id="nsfw-optional"><a href="#nsfw-optional" class="header-anchor">#</a> nsfw (optional)</h3> <p>Not safe for work flag <code>[0, 1]</code>.</p> <h3 id="format-optional"><a href="#format-optional" class="header-anchor">#</a> format (optional)</h3> <p>Return format <code>[json, redirect, txt]</code>.</p> <h3 id="use-file-date-optional-admin-only"><a href="#use-file-date-optional-admin-only" class="header-anchor">#</a> use_file_date (optional, admin only)</h3> <p>Configure to use file date taken (Exif) instead of upload date <code>[0, 1]</code>.</p> <h2 id="example-call"><a href="#example-call" class="header-anchor">#</a> Example call</h2> <div class="language-plain extra-class"><pre class="language-plain"><code>curl --fail-with-body -X POST \
+  -H &quot;X-API-Key: $key&quot; \
+  -H &quot;Content-Type: multipart/form-data&quot; \
+  -F &quot;source=@image.jpeg&quot; \
+  http://mysite.com/api/1/upload
+</code></pre></div><h2 id="api-response"><a href="#api-response" class="header-anchor">#</a> API response</h2> <p>API V1 responses will vary depending on the <strong>format</strong> parameter:</p> <table><thead><tr><th>Format</th> <th>Output</th></tr></thead> <tbody><tr><td>json</td> <td>Image upload info in JSON format (default)</td></tr> <tr><td>txt</td> <td>Image direct URL in text/plain format</td></tr> <tr><td>redirect</td> <td>Redirects to the image viewer URL</td></tr></tbody></table> <p>When using JSON the response output will contain the <code>status_txt</code> and <code>status_code</code> properties.</p> <h2 id="example-response-json"><a href="#example-response-json" class="header-anchor">#</a> Example response (JSON)</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;status_code&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file uploaded&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">3011299</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">496</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">360</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;date&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2024-10-10 16:58:00&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;date_gmt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2024-10-10 19:58:00&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers animated music video MrWeebl&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;nsfw&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;storage_mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;datefolder&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;md5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;7a120d5c28de264bdbb934f023a628fd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;source_md5&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;original_filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers _ animated music video _ MrWeebl.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;original_exifdata&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;views&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;category_id&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;chain&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;thumb_size&quot;</span><span class="token operator">:</span> <span class="token number">21212</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;medium_size&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;frame_size&quot;</span><span class="token operator">:</span> <span class="token number">19804</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;expiration_date_gmt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2024-10-10 20:28:00&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;likes&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;is_animated&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;is_approved&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;is_360&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;duration&quot;</span><span class="token operator">:</span> <span class="token number">73</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;video&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tags_string&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;file&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;resource&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;url&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id_encoded&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ZfGd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;video/mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ratio&quot;</span><span class="token operator">:</span> <span class="token number">1.3777777777777778</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;size_formatted&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3 MB&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;frame&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.fr.jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.fr&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.fr.jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">19804</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.mp4&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;video/mp4&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mp4&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.mp4&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">3011299</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;thumb&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.th.jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers-animated-music-video.th&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.th.jpeg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">21212</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url_frame&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.fr.jpeg&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;medium&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mime&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;duration_time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01:13&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url_viewer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/clip/Badgers-animated-music-video-MrWeebl.ZfGd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;path_viewer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/clip/Badgers-animated-music-video-MrWeebl.ZfGd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url_short&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/clip/ZfGd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;display_url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/images/2024/10/10/Badgers-animated-music-video.fr.jpeg&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;display_width&quot;</span><span class="token operator">:</span> <span class="token number">496</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;display_height&quot;</span><span class="token operator">:</span> <span class="token number">360</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;views_label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;views&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;likes_label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;likes&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;how_long_ago&quot;</span><span class="token operator">:</span> <span class="token string">&quot;moments ago&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;date_fixed_peer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2024-10-10 19:58:00&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;title_truncated&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers animated music vi...&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;title_truncated_html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers animated music vi...&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;is_use_loader&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;display_title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Badgers animated music video MrWeebl&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;delete_url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost/clip/ZfGd/delete/e8b07479818bc58d3b9849c431e9c2b28827ccce7809ed4f&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;status_txt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OK&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="example-response-txt"><a href="#example-response-txt" class="header-anchor">#</a> Example response (txt)</h2> <div class="language-plain extra-class"><pre class="language-plain"><code>http://localhost/images/2024/10/10/Badgers-animated-music-video.mp4
+</code></pre></div><h2 id="example-response-redirect"><a href="#example-response-redirect" class="header-anchor">#</a> Example response (redirect)</h2> <div class="language-plain extra-class"><pre class="language-plain"><code>Location: /clip/Badgers-animated-music-video-MrWeebl.ZfGd
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v4-docs/edit/main/api/1/file-upload.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/api/1/authorization.html" class="prev">
+        Authorization
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e0950cc1.js" defer></script><script src="/assets/js/2.5d436417.js" defer></script><script src="/assets/js/1.7f129dd2.js" defer></script><script src="/assets/js/36.74890534.js" defer></script>
+  </body>
+</html>

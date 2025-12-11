@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Install Chevereto on VPS | Chevereto V4 Docs</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-66RGXZE185"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-66RGXZE185');</script>
+    <meta name="description" content="Image and Video hosting software">
+    <meta property="og:site_name" content="Chevereto V4 Docs">
+    <meta property="og:title" content="Install Chevereto on VPS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/guides/server/vps.html">
+    <meta name="twitter:title" content="Install Chevereto on VPS">
+    <meta name="twitter:url" content="/guides/server/vps.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#006edb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.a1ead4c0.css" as="style"><link rel="preload" href="/assets/js/app.e0950cc1.js" as="script"><link rel="preload" href="/assets/js/2.5d436417.js" as="script"><link rel="preload" href="/assets/js/1.7f129dd2.js" as="script"><link rel="preload" href="/assets/js/66.a1e2c76a.js" as="script"><link rel="prefetch" href="/assets/js/10.75c13605.js"><link rel="prefetch" href="/assets/js/11.f5f9dbc3.js"><link rel="prefetch" href="/assets/js/12.4d01235e.js"><link rel="prefetch" href="/assets/js/13.dd9432d4.js"><link rel="prefetch" href="/assets/js/14.46f48afb.js"><link rel="prefetch" href="/assets/js/15.a53ceec0.js"><link rel="prefetch" href="/assets/js/16.b7087e6b.js"><link rel="prefetch" href="/assets/js/17.a9aa9202.js"><link rel="prefetch" href="/assets/js/18.24e9135c.js"><link rel="prefetch" href="/assets/js/19.eb100255.js"><link rel="prefetch" href="/assets/js/20.12739b27.js"><link rel="prefetch" href="/assets/js/21.ff50794c.js"><link rel="prefetch" href="/assets/js/22.3a7d5628.js"><link rel="prefetch" href="/assets/js/23.a2055014.js"><link rel="prefetch" href="/assets/js/24.8e9e7b41.js"><link rel="prefetch" href="/assets/js/25.f6e23a7a.js"><link rel="prefetch" href="/assets/js/26.6bb6d9ad.js"><link rel="prefetch" href="/assets/js/27.b8c8cf19.js"><link rel="prefetch" href="/assets/js/28.9cb2185a.js"><link rel="prefetch" href="/assets/js/29.69297802.js"><link rel="prefetch" href="/assets/js/3.bf70da03.js"><link rel="prefetch" href="/assets/js/30.6609ba83.js"><link rel="prefetch" href="/assets/js/31.62b42666.js"><link rel="prefetch" href="/assets/js/32.284a2cfc.js"><link rel="prefetch" href="/assets/js/33.8ba7d562.js"><link rel="prefetch" href="/assets/js/34.0a149a31.js"><link rel="prefetch" href="/assets/js/35.ca482816.js"><link rel="prefetch" href="/assets/js/36.74890534.js"><link rel="prefetch" href="/assets/js/37.4aec0739.js"><link rel="prefetch" href="/assets/js/38.f341a0f2.js"><link rel="prefetch" href="/assets/js/39.119198a5.js"><link rel="prefetch" href="/assets/js/4.72ac77d0.js"><link rel="prefetch" href="/assets/js/40.2bad0749.js"><link rel="prefetch" href="/assets/js/41.68b503d8.js"><link rel="prefetch" href="/assets/js/42.094b575e.js"><link rel="prefetch" href="/assets/js/43.e1b67def.js"><link rel="prefetch" href="/assets/js/44.1afca8bf.js"><link rel="prefetch" href="/assets/js/45.3469784c.js"><link rel="prefetch" href="/assets/js/46.baaeaaf9.js"><link rel="prefetch" href="/assets/js/47.de9aa8cb.js"><link rel="prefetch" href="/assets/js/48.97034949.js"><link rel="prefetch" href="/assets/js/49.e13a9185.js"><link rel="prefetch" href="/assets/js/5.793663cc.js"><link rel="prefetch" href="/assets/js/50.88c5ffc8.js"><link rel="prefetch" href="/assets/js/51.b77eed23.js"><link rel="prefetch" href="/assets/js/52.9f2fa3b5.js"><link rel="prefetch" href="/assets/js/53.fbad2629.js"><link rel="prefetch" href="/assets/js/54.642fe300.js"><link rel="prefetch" href="/assets/js/55.28e9fd66.js"><link rel="prefetch" href="/assets/js/56.a0fbaa9f.js"><link rel="prefetch" href="/assets/js/57.3930dc80.js"><link rel="prefetch" href="/assets/js/58.e6a711ab.js"><link rel="prefetch" href="/assets/js/59.688aaba5.js"><link rel="prefetch" href="/assets/js/6.8f6d9838.js"><link rel="prefetch" href="/assets/js/60.9161ffc5.js"><link rel="prefetch" href="/assets/js/61.cfd3cff7.js"><link rel="prefetch" href="/assets/js/62.5a2f23d6.js"><link rel="prefetch" href="/assets/js/63.56b714ca.js"><link rel="prefetch" href="/assets/js/64.a31261c0.js"><link rel="prefetch" href="/assets/js/65.7ea5ca09.js"><link rel="prefetch" href="/assets/js/67.2a76a4df.js"><link rel="prefetch" href="/assets/js/68.1a7395f0.js"><link rel="prefetch" href="/assets/js/69.c8e06443.js"><link rel="prefetch" href="/assets/js/7.2b6b7c05.js"><link rel="prefetch" href="/assets/js/70.85f09668.js"><link rel="prefetch" href="/assets/js/71.3d8393c3.js"><link rel="prefetch" href="/assets/js/72.dc723ceb.js"><link rel="prefetch" href="/assets/js/73.18f8b32f.js"><link rel="prefetch" href="/assets/js/74.ca653ce6.js"><link rel="prefetch" href="/assets/js/75.f15db5b3.js"><link rel="prefetch" href="/assets/js/76.f1ef4540.js"><link rel="prefetch" href="/assets/js/77.f9eecc60.js"><link rel="prefetch" href="/assets/js/78.ad4a07e4.js"><link rel="prefetch" href="/assets/js/79.cd85246e.js"><link rel="prefetch" href="/assets/js/80.890d7916.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.48a0b1d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1ead4c0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevereto V4 Docs" class="logo"> <span class="site-name can-hide">Chevereto V4 Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" class="nav-link">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" class="nav-link">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link router-link-active">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Intro Menu" class="dropdown-title"><span class="title">Intro</span> <span class="arrow down"></span></button> <button type="button" aria-label="Intro Menu" class="mobile-dropdown-title"><span class="title">Intro</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Get started
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/get-started/welcome.html" class="nav-link">
+  Welcome
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/links.html" class="nav-link">
+  Links
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/contributing.html" class="nav-link">
+  Contributing
+</a></li><li class="dropdown-subitem"><a href="/introduction/get-started/copyright.html" class="nav-link">
+  Copyright
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Editions
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/editions/compare.html" class="nav-link">
+  Compare editions
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-pro.html" class="nav-link">
+  Chevereto Pro
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-lite.html" class="nav-link">
+  Chevereto Lite
+</a></li><li class="dropdown-subitem"><a href="/introduction/editions/chevereto-free.html" class="nav-link">
+  Chevereto Free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Changelog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/introduction/changelog/welcome-back.html" class="nav-link">
+  Welcome back
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.4.html" class="nav-link">
+  Vivaracho (4.4)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.3.html" class="nav-link">
+  Entrador (4.3)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.2.html" class="nav-link">
+  Regio (4.2)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.1.html" class="nav-link">
+  Pulento (4.1)
+</a></li><li class="dropdown-subitem"><a href="/introduction/changelog/4.0.html" class="nav-link">
+  Macanudo (4.0)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="App Menu" class="dropdown-title"><span class="title">App</span> <span class="arrow down"></span></button> <button type="button" aria-label="App Menu" class="mobile-dropdown-title"><span class="title">App</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Installing &amp; Updating
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/installing/installation.html" class="nav-link">
+  Installation
+</a></li><li class="dropdown-subitem"><a href="/application/installing/updating.html" class="nav-link">
+  Updating
+</a></li><li class="dropdown-subitem"><a href="/application/installing/upgrading.html" class="nav-link">
+  Upgrading
+</a></li><li class="dropdown-subitem"><a href="/application/installing/from-free.html" class="nav-link">
+  From free
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Configuration
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/configuration/configuring.html" class="nav-link">
+  Configuring
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/environment.html" class="nav-link">
+  Environment
+</a></li><li class="dropdown-subitem"><a href="/application/configuration/multitenancy.html" class="nav-link">
+  Multitenancy
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Stack
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/stack/operating-system.html" class="nav-link">
+  Operating system
+</a></li><li class="dropdown-subitem"><a href="/application/stack/php.html" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/application/stack/mysql-server.html" class="nav-link">
+  MySQL Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/web-server.html" class="nav-link">
+  Web Server
+</a></li><li class="dropdown-subitem"><a href="/application/stack/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/application/stack/utilities.html" class="nav-link">
+  Utilities
+</a></li><li class="dropdown-subitem"><a href="/application/stack/cron.html" class="nav-link">
+  CRON
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Reference
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/application/reference/cli.html" class="nav-link">
+  CLI
+</a></li><li class="dropdown-subitem"><a href="/application/reference/encryption.html" class="nav-link">
+  Encryption
+</a></li><li class="dropdown-subitem"><a href="/application/reference/errors.html" class="nav-link">
+  Errors
+</a></li><li class="dropdown-subitem"><a href="/application/reference/security.html" class="nav-link">
+  Security
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          How-to
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/how-to/debug.html" class="nav-link">
+  Debug
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/repl.html" class="nav-link">
+  REPL
+</a></li><li class="dropdown-subitem"><a href="/developer/how-to/troubleshoot.html" class="nav-link">
+  Troubleshoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Customization
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/customization/language.html" class="nav-link">
+  Language
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/routes.html" class="nav-link">
+  Routes
+</a></li><li class="dropdown-subitem"><a href="/developer/customization/theme.html" class="nav-link">
+  Theme
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="API Menu" class="dropdown-title"><span class="title">API</span> <span class="arrow down"></span></button> <button type="button" aria-label="API Menu" class="mobile-dropdown-title"><span class="title">API</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          API V4
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/4/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/4/tenants.html" class="nav-link">
+  Tenants
+</a></li></ul></li><li class="dropdown-item"><h4>
+          API V1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/api/1/authorization.html" class="nav-link">
+  Authorization
+</a></li><li class="dropdown-subitem"><a href="/api/1/file-upload.html" class="nav-link">
+  File upload
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guides/" class="nav-link router-link-active">
+  Guides
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Manuals Menu" class="dropdown-title"><span class="title">Manuals</span> <span class="arrow down"></span></button> <button type="button" aria-label="Manuals Menu" class="mobile-dropdown-title"><span class="title">Manuals</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v4-admin.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v4-user.chevereto.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  User manual
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Guides</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/" aria-current="page" class="sidebar-link">Introduction</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/docker/" class="sidebar-link">Install on Docker</a></li><li><a href="/guides/docker/pure-docker.html" class="sidebar-link">Install on Pure Docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Install on Server</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/server/vps.html" aria-current="page" class="active sidebar-link">VPS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guides/server/vps.html#repository" class="sidebar-link">Repository</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#stack" class="sidebar-link">Stack</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#instructions" class="sidebar-link">Instructions</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#ubuntu" class="sidebar-link">Ubuntu</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guides/server/vps.html#prepare" class="sidebar-link">Prepare</a></li></ul></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#common" class="sidebar-link">Common</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guides/server/vps.html#new" class="sidebar-link">New</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#get" class="sidebar-link">Get</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#cloudflare-remote-ip" class="sidebar-link">Cloudflare remote IP</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#https-setup" class="sidebar-link">HTTPS setup</a></li><li class="sidebar-sub-header"><a href="/guides/server/vps.html#wipe-leftovers" class="sidebar-link">Wipe leftovers</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Install on cPanel</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/cpanel/" class="sidebar-link">Introduction</a></li><li><a href="/guides/cpanel/php.html" class="sidebar-link">PHP</a></li><li><a href="/guides/cpanel/database.html" class="sidebar-link">Database</a></li><li><a href="/guides/cpanel/app-files.html" class="sidebar-link">App files</a></li><li><a href="/guides/cpanel/ffmpeg.html" class="sidebar-link">FFmpeg</a></li><li><a href="/guides/cpanel/cron.html" class="sidebar-link">CRON</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Install on Plesk</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/plesk/" class="sidebar-link">Introduction</a></li><li><a href="/guides/plesk/php.html" class="sidebar-link">PHP</a></li><li><a href="/guides/plesk/database.html" class="sidebar-link">Database</a></li><li><a href="/guides/plesk/app-files.html" class="sidebar-link">App files</a></li><li><a href="/guides/plesk/cron.html" class="sidebar-link">CRON</a></li><li><a href="/guides/plesk/ffmpeg.html" class="sidebar-link">FFmpeg</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="install-chevereto-on-vps"><a href="#install-chevereto-on-vps" class="header-anchor">#</a> Install Chevereto on VPS</h1> <p>Collection of bash scripts to install Chevereto in any VPS (Virtual Private Server).</p> <div class="custom-block tip"><p class="custom-block-title">Installation service available</p> <p>We offer a <a href="https://chevereto.com/support" target="_blank" rel="noopener noreferrer">paid installation service<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for this guide. We will install Chevereto VPS for you, including all the requirements and configurations.</p></div> <h2 id="repository"><a href="#repository" class="header-anchor">#</a> Repository</h2> <p>We have a GitHub repository with all the commands we will need. Check the repository at <a href="https://github.com/chevereto/vps" target="_blank" rel="noopener noreferrer">chevereto/vps<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for instructions.</p> <h2 id="stack"><a href="#stack" class="header-anchor">#</a> Stack</h2> <ul><li>PHP</li> <li>Apache HTTP Web server</li> <li>MySQL Server</li> <li>Composer</li> <li>FFmpeg</li> <li>Certbot</li> <li>ExifTool</li> <li>exiftran</li></ul> <h2 id="instructions"><a href="#instructions" class="header-anchor">#</a> Instructions</h2> <ul><li>Root login to your VPS</li> <li>Run the following script(s)</li></ul> <h2 id="ubuntu"><a href="#ubuntu" class="header-anchor">#</a> Ubuntu</h2> <blockquote><p><strong>Note</strong>: Ubuntu LTS 24.04 is recommended. If you run other system you may need to alter the scripts. Feel free to contribute.</p></blockquote> <h3 id="prepare"><a href="#prepare" class="header-anchor">#</a> Prepare</h3> <p>The <a href="https://github.com/chevereto/vps/blob/4.3/ubuntu/24.04/prepare.sh" target="_blank" rel="noopener noreferrer">prepare.sh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> script install the system stack on Ubuntu.</p> <p>Reboot the VPS to make sure to apply any pending kernel updates:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>systemctl <span class="token function">reboot</span>
+</code></pre></div><p>Make sure to change <code>24.04</code> to match your Ubuntu LTS (available 20.04, 22.04 and 24.04).</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> https://raw.githubusercontent.com/chevereto/vps/4.3/ubuntu/24.04/prepare.sh<span class="token punctuation">)</span>
+</code></pre></div><p>This message will be shown on success:</p> <div class="language-plain extra-class"><pre class="language-plain"><code>[OK] Stack ready for Chevereto!
+</code></pre></div><h2 id="common"><a href="#common" class="header-anchor">#</a> Common</h2> <ul><li>The scripts at <code>common/</code> will work under any unix-like system</li> <li>Requires <code>curl</code> and <code>unzip</code></li></ul> <h3 id="new"><a href="#new" class="header-anchor">#</a> New</h3> <p>The <a href="https://github.com/chevereto/vps/blob/4.3/common/new.sh" target="_blank" rel="noopener noreferrer">new.sh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> script downloads Chevereto and configures Apache HTTP Web server, MySQL, CRON and FFmpeg. Its purpose is to prepare for <a href="https://v4-docs.chevereto.com/application/installing/installation.html" target="_blank" rel="noopener noreferrer">Chevereto Installation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>This is intended to brand new installations and it should run after <a href="#prepare">prepare</a> as it assumes that the system stack is ready.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> https://raw.githubusercontent.com/chevereto/vps/4.3/common/new.sh<span class="token punctuation">)</span>
+</code></pre></div><h4 id="notes"><a href="#notes" class="header-anchor">#</a> Notes</h4> <p>On the server:</p> <ul><li>The web root is located at <code>/var/www/html</code></li> <li>The MySQL root password is saved at <code>/root/.mysql_password</code></li> <li>Logs are at <code>/var/log/apache2</code></li></ul> <p>IMPORTANT:</p> <ul><li>Secure your database by running <code>mysql_secure_installation</code></li></ul> <h3 id="get"><a href="#get" class="header-anchor">#</a> Get</h3> <p>The <a href="https://github.com/chevereto/vps/blob/4.3/common/get.sh" target="_blank" rel="noopener noreferrer">get.sh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> script download and extracts Chevereto in the <strong>current working folder</strong>.</p> <ul><li><code>cd</code> into the website project folder (for example <code>/var/www/html</code>)</li> <li>Run the following command</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> https://raw.githubusercontent.com/chevereto/vps/4.3/common/get.sh<span class="token punctuation">)</span>
+</code></pre></div><h3 id="cloudflare-remote-ip"><a href="#cloudflare-remote-ip" class="header-anchor">#</a> Cloudflare remote IP</h3> <p>The <a href="https://github.com/chevereto/vps/blob/4.3/common/cf-remoteip.sh" target="_blank" rel="noopener noreferrer">cf-remoteip.sh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> script syncs the known IPs for CloudFlare remote IP. This <strong>must</strong> be used if you are using CloudFlare.</p> <blockquote><p><strong>Warning</strong>: If you use CloudFlare and not complete this setup your Chevereto installation won't be able to retrieve real visitors IP.</p></blockquote> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> https://raw.githubusercontent.com/chevereto/vps/4.3/common/cf-remoteip.sh<span class="token punctuation">)</span>
+</code></pre></div><ul><li>To save the above script in your VPS:</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> <span class="token parameter variable">-f</span> <span class="token parameter variable">-SOJL</span> <span class="token punctuation">\</span>
+    --output-dir /etc/apache2 <span class="token punctuation">\</span>
+    https://raw.githubusercontent.com/chevereto/vps/4.3/common/cf-remoteip.sh
+</code></pre></div><ul><li>To add the above script to CRON (cron.d) to keep these IP ranges auto updated:</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cat</span> <span class="token operator">&gt;</span>/etc/cron.d/cf-remoteip <span class="token operator">&lt;&lt;</span><span class="token string">EOM
+30 3 * * * /etc/apache2/cf-remoteip.sh &gt;/dev/null 2&gt;&amp;1
+EOM</span>
+</code></pre></div><h3 id="https-setup"><a href="#https-setup" class="header-anchor">#</a> HTTPS setup</h3> <p>Run the following command to get automatic renewable HTTPS thanks to certbot. Mind to change <code>example.com</code> with the target domain(s).</p> <div class="language-sh extra-class"><pre class="language-sh"><code>certbot <span class="token parameter variable">--apache</span> <span class="token parameter variable">-d</span> example.com
+</code></pre></div><p>If you are using <code>www.</code> subdomain you can add it like this:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>certbot <span class="token parameter variable">--apache</span> <span class="token parameter variable">-d</span> example.com <span class="token parameter variable">-d</span> www.example.com
+</code></pre></div><h3 id="wipe-leftovers"><a href="#wipe-leftovers" class="header-anchor">#</a> Wipe leftovers</h3> <p>The <a href="https://github.com/chevereto/vps/blob/4.3/common/wipe-v3-leftovers.sh" target="_blank" rel="noopener noreferrer">wipe-v3-leftovers.sh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> script removes any previous Chevereto V3 installation leftovers from the current working folder.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-s</span> https://raw.githubusercontent.com/chevereto/vps/4.3/common/wipe-v3-leftovers.sh<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevereto/v4-docs/edit/main/guides/server/vps.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guides/docker/pure-docker.html" class="prev">
+        Install on Pure Docker
+      </a></span> <span class="next"><a href="/guides/cpanel/">
+        Introduction
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e0950cc1.js" defer></script><script src="/assets/js/2.5d436417.js" defer></script><script src="/assets/js/1.7f129dd2.js" defer></script><script src="/assets/js/66.a1e2c76a.js" defer></script>
+  </body>
+</html>
